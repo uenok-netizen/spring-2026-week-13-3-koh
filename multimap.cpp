@@ -19,11 +19,11 @@ int main() {
     
     multimap<int, string> studentMap;
 
-    studentMap.insert({105, "Kohki"});
-    studentMap.insert({101, "Alice"});
-    studentMap.insert({103, "Bob"});
-    studentMap.insert({101, "Charlie"});
-    studentMap.insert({104, "Daisy"});
+    studentMap.insert({1311333, "Kohki"});
+    studentMap.insert({120461, "Alice"});
+    studentMap.insert({103374, "Bob"});
+    studentMap.insert({120461, "Charlie"});
+    studentMap.insert({132234, "Daisy"});
 
     cout << "ID\tName" << endl;
     cout << "------------------" << endl;
