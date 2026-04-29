@@ -13,16 +13,24 @@
 // git commit -m "Implement multimap for student IDs and names"
 // git push origin main
 
+using namespace std;
 
 int main() {
-    // Create a multimap where the key is student ID (int) and value is student name (string)
     
+    multimap<int, string> studentMap;
 
-    // Insert students with their IDs into the multimap
-   
+    studentMap.insert({105, "Kohki"});
+    studentMap.insert({101, "Alice"});
+    studentMap.insert({103, "Bob"});
+    studentMap.insert({101, "Charlie"});
+    studentMap.insert({104, "Daisy"});
 
-    // Display all students sorted by their student IDs
-   
+    cout << "ID\tName" << endl;
+    cout << "------------------" << endl;
+    
+    for (const auto& student : studentMap) {
+        cout << "ID: " << student.first << " | Name: " << student.second << endl;
+    }
 
     return 0;
 }
